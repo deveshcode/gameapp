@@ -1,0 +1,75 @@
+ion-content {
+  --background: #fff url("../../assets/img/bg2.png") no-repeat center
+    center / cover;
+}
+
+.login-page {
+  margin-top: 40%;
+}
+
+.fb_login {
+  width: 40%;
+  box-shadow: 0px 2px 2px #dbd3d3;
+  height: 60px;
+}
+
+.google_login {
+  margin-left: 8%;
+  margin-right: 3%;
+  width: 40%;
+  box-shadow: 0px 2px 2px 0px #dbd3d3;
+  height: 60px;
+}
+
+.input_box1 {
+  border: 1px solid #dedede;
+  margin-bottom: 10px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+
+.input_box2 {
+  border: 1px solid #dedede;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.loginpg-text {
+  font-size: 15px;
+  color: #928989;
+  text-align: center;
+}
+
+.placehold_text {
+  font-size: 15px;
+  color: #5e5a5a;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.l-button
+{
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+.login-text{
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+ion-icon {
+  font-size: 35px; //Preferred size here
+}
+
+.logo-facebook
+{
+  color:blue;
+}

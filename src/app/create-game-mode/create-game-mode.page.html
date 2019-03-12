@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Create New Game</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-radio-group [(ngModel)]="gameMode">
+    <ion-list-header>
+      Game Mode
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Regular 3:30</ion-label>
+      <ion-radio value="210"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>One day 24:00</ion-label>
+      <ion-radio value="1440"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Other (Enter value HH:MM)</ion-label>
+      <ion-radio value="-1"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Unlimited</ion-label>
+      <ion-radio value="0"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-content>
+
+<ion-footer padding>
+  <ion-button color="primary" expand="full" (click)="selectGameMode()"
+    >Next</ion-button
+  >
+</ion-footer>

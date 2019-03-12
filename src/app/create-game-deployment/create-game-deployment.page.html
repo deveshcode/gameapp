@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Create New Game</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-radio-group [(ngModel)]="deployment">
+    <ion-list-header>
+      Deployment Type
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Random</ion-label>
+      <ion-radio value="random"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>1. Frontline Clash</ion-label>
+      <ion-radio value="frontline clash"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>2. Dawn Assault</ion-label>
+      <ion-radio value="dawn assault"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>3. Counter Thrust</ion-label>
+      <ion-radio value="counter thrust"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>4. Encircle</ion-label>
+      <ion-radio value="encircle"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>5. Refused Flank</ion-label>
+      <ion-radio value="refused flank"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>6. Marching Columns</ion-label>
+      <ion-radio value="marching columns"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-content>
+
+<ion-footer padding>
+  <ion-button color="primary" expand="full" (click)="selectDeployment()"
+    >Next</ion-button
+  >
+</ion-footer>

@@ -1,0 +1,77 @@
+.username {
+  font-size: 0.7em;
+  margin-bottom: -1em !important;
+}
+
+.teamname {
+  font-size: 0.7em;
+  color: var(--ion-color-secondary, red);
+}
+
+ion-avatar {
+  margin: auto;
+}
+
+.turn {
+  color: var(--ion-color-secondary, red);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.bg-red {
+  background-color: var(--ion-color-secondary, red);
+  color: white;
+}
+
+.smalltext {
+  font-size: 0.8em !important;
+  color: var(--ion-color-darkgray, #777777);
+}
+
+.phase {
+  font-size: 0.5em !important;
+  padding: 0.1em !important;
+}
+
+.no-margin {
+  margin-bottom: 0px;
+}
+
+.title {
+  font-size: 0.9em;
+  margin: 8px;
+}
+
+.yellow-title {
+  color: yellow;
+  margin: 8px;
+}
+
+.score {
+  margin: 8px;
+}
+
+.padding {
+  padding: 0.05em !important;
+}
+
+.color-gray {
+  background-color: var(--ion-color-gray, #777777);
+}
+
+.color-white {
+  background-color: white;
+}
+
+.center-align {
+  display: flex;
+  align-items: center;
+}
+
+.shadow {
+  box-shadow: 1px 1px var(--ion-color-darkgray, #898888);
+}
+
+ion-grid {
+  margin-bottom: 15px;
+}

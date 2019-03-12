@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "435711135895",
+    "firebase_url": "https://theninthage-fbf8a.firebaseio.com",
+    "project_id": "theninthage-fbf8a",
+    "storage_bucket": "theninthage-fbf8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435711135895:android:3cdd1c2d878c4bc8",
+        "android_client_info": {
+          "package_name": "com.theninthage.sixbras"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435711135895-pv89lgdrskjlkmb2du691lb282dp6h2v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.theninthage.sixbras",
+            "certificate_hash": "a4c009e993bc0d649b4471ba6eea0cf6d1118a9b"
+          }
+        },
+        {
+          "client_id": "435711135895-i6v3kiprrh0b55v9mefou2hv0qd1jile.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZXLLqaLS6E2wnOaK3YEVXvbxfGxoGC_g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435711135895-i6v3kiprrh0b55v9mefou2hv0qd1jile.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

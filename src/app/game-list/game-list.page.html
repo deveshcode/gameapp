@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Games</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/select-opponent']">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div text-center *ngIf="(games | async)?.length == 0">
+    <h5>No games to show</h5>
+  </div>
+  <ion-grid class="color-gray" *ngFor="let game of (games | async)">
+    <ion-row>
+      <ion-col align-self-start text-center>
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+
+        <h6 class="username">Vivek Gawande</h6>
+        <h6 class="teamname">Daemon Legions</h6>
+      </ion-col>
+
+      <ion-col align-self-center text-center>
+        <h5 class="turn">TURN 4.1</h5>
+
+        <div class="bg-red">
+          <h6 class="phase">Movement phase</h6>
+        </div>
+      </ion-col>
+
+      <ion-col align-self-end text-center>
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+
+        <h6 class="username">Vivek Gawande</h6>
+        <h6 class="teamname">Daemon Legions</h6>
+      </ion-col>
+    </ion-row>
+
+    <ion-row padding>
+      <ion-col class="color-white center-align shadow">
+        <div class="padding">
+          <h6 float-right class="no-margin smalltext">
+            3870 &nbsp;&nbsp;&nbsp;<span>Pts</span>
+          </h6>
+          <h6 float-right class="smalltext">
+            1:25:36 &nbsp;&nbsp;&nbsp;<ion-icon name="hourglass"></ion-icon>
+          </h6>
+        </div>
+      </ion-col>
+      <ion-col size="5" class="bg-red shadow">
+        <div text-center>
+          <h6 class="title">{{ game.deployment | uppercase }}</h6>
+          <h6 class="yellow-title">{{ game.objectives | uppercase }}</h6>
+          <h6 class="score">13 | 7</h6>
+        </div>
+      </ion-col>
+      <ion-col class="color-white center-align shadow">
+        <div class="padding">
+          <h6 float-right class="no-margin smalltext">
+            3870 &nbsp;&nbsp;&nbsp;<span>Pts</span>
+          </h6>
+          <h6 float-right class="smalltext">
+            1:25:36 &nbsp;&nbsp;&nbsp;<ion-icon name="hourglass"></ion-icon>
+          </h6>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

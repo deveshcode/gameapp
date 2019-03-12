@@ -1,0 +1,56 @@
+<ion-content padding>
+  <ion-list class="margin-top">
+    <ion-item class="input-border">
+      <ion-label floating></ion-label>
+      <ion-input
+        class="smalltext"
+        type="text"
+        placeholder="Username"
+        [(ngModel)]="username"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="input-border">
+      <ion-label floating></ion-label>
+      <ion-input
+        class="smalltext"
+        type="email"
+        placeholder="Email"
+        [(ngModel)]="email"
+        email
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="input-border">
+      <ion-label></ion-label>
+      <ion-input
+        class="smalltext"
+        type="password"
+        placeholder="Password"
+        [(ngModel)]="password"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item class="input-border">
+      <ion-label></ion-label>
+      <ion-input
+        class="smalltext"
+        type="password"
+        placeholder="Re-Enter Password"
+        [(ngModel)]="repassword"
+      ></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button color="danger" fill="solid" expand="full" (click)="register()">
+    Register
+  </ion-button>
+
+  <div text-center>
+    <p class="smalltext">
+      Already have an account ?<a class="link" [routerLink]="['/login']">
+        Sign in here</a
+      >
+    </p>
+  </div>
+</ion-content>

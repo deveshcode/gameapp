@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Create New Game</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-radio-group [(ngModel)]="publication">
+    <ion-list-header>
+      Publication Mode
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Public</ion-label>
+      <ion-radio value="public"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Private</ion-label>
+      <ion-radio value="private"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Unlisted</ion-label>
+      <ion-radio value="unlisted"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-content>
+
+<ion-footer padding>
+  <ion-button color="primary" expand="full" (click)="selectPublication()"
+    >Next</ion-button
+  >
+</ion-footer>

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Create New Game</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-radio-group [(ngModel)]="opponent">
+    <ion-list-header>
+      Select your opponent
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Public (Everyone can join)</ion-label>
+      <ion-radio value="public" checked></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Invitation-Only</ion-label>
+      <ion-radio value="invitation"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-content>
+
+<ion-footer padding>
+  <ion-button color="primary" expand="full" (click)="selectOpponent()"
+    >Next</ion-button
+  >
+</ion-footer>

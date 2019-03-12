@@ -1,0 +1,56 @@
+<ion-content padding class="splash">
+  <form class="login-page">
+    <ion-list>
+      <ion-item class="input_box1">
+        <ion-label floating></ion-label>
+        <ion-input
+          class="placehold_text"
+          type="email"
+          placeholder="Email"
+          floating
+        ></ion-input>
+      </ion-item>
+      <ion-item class="input_box2">
+        <ion-label></ion-label>
+        <ion-input
+          class="placehold_text"
+          type="password"
+          placeholder="Password"
+        ></ion-input>
+      </ion-item>
+    </ion-list>
+  </form>
+
+  <div style="text-align:center;">
+    <p class="loginpg-text">
+Or loging with
+    </p>
+  </div>
+
+  <ion-button fill="clear" class="google_login" color="">
+    <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
+  </ion-button>
+
+  <ion-button color="danger" fill="clear" class="fb_login">
+    <ion-icon name="logo-googleplus"></ion-icon>
+  </ion-button>
+
+  <div>
+    <ion-button
+      color="danger"
+      fill="solid"
+      expand="full"
+      class="l-button"
+      [routerLink]="['/tabs']
+    >
+    <p class="login-text">
+      LOG IN
+    </p>
+    </ion-button>
+  </div>
+
+  <p class="loginpg-text">
+    Dont have an account ?<a class="link" [routerLink]="['/register']">
+      Sign up here</a>
+  </p>
+</ion-content>

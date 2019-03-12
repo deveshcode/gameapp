@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Create New Game</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-radio-group [(ngModel)]="objectives">
+    <ion-list-header>
+      Secondary Objectives
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Random</ion-label>
+      <ion-radio value="random"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>1. Hold the Ground</ion-label>
+      <ion-radio value="hold the ground"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>2. Breakthrough</ion-label>
+      <ion-radio value="breakthrough"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>3. Spoils of War</ion-label>
+      <ion-radio value="spoils of war"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>4. King of the Hill</ion-label>
+      <ion-radio value="king of the hill"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>5. Capture the Flags</ion-label>
+      <ion-radio value="capture the flags"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>6. Secure Target</ion-label>
+      <ion-radio value="secure target"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-content>
+
+<ion-footer padding>
+  <ion-button color="primary" expand="full" (click)="createGame()"
+    >Next</ion-button
+  >
+</ion-footer>

@@ -1,0 +1,33 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu>
+      <ion-header>
+        <ion-toolbar>
+          <ion-avatar class="ionava">
+            <img *ngIf="! user" src="../../assets/img/fQ6rAs36QVy83ZSKa9MG_man.jpeg" />
+            <img *ngIf="user" [src]="user?.profilePic" alt="abc" />
+          </ion-avatar>
+          <div *ngIf="!user" text-center><h6>John Doe</h6></div>
+          <div *ngIf="user?.name" text-center><h6>{{user?.name}}</h6></div>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>
+                {{ p.title }}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-item class="hover-cursor" (click)="logOut()">
+            <ion-icon name="log-out"></ion-icon
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logout
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

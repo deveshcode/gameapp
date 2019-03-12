@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>435711135895-6r9erumr41g3565hdah21jsi7k2v5c5u.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.435711135895-6r9erumr41g3565hdah21jsi7k2v5c5u</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAetL51sG-sQS2sajvF5p0RVrK5SQSAL4g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>435711135895</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.theninthage.sixbras</string>
+	<key>PROJECT_ID</key>
+	<string>theninthage-fbf8a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>theninthage-fbf8a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:435711135895:ios:3cdd1c2d878c4bc8</string>
+	<key>DATABASE_URL</key>
+	<string>https://theninthage-fbf8a.firebaseio.com</string>
+</dict>
+</plist>

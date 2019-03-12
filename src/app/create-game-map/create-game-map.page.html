@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Create New Game</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-radio-group [(ngModel)]="map">
+    <ion-list-header>
+      Game Map
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>ETC 2018 map 1</ion-label>
+      <ion-radio value="etc_2018_map_1"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>ETC 2018 map 2</ion-label>
+      <ion-radio value="etc_2018_map_2"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>ETC 2018 map 3</ion-label>
+      <ion-radio value="etc_2018_map_3"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>ETC 2018 map 4</ion-label>
+      <ion-radio value="etc_2018_map_4"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>ETC 2018 map 5</ion-label>
+      <ion-radio value="etc_2018_map_5"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-content>
+
+<ion-footer padding>
+  <ion-button color="primary" expand="full" (click)="selectMap()"
+    >Next</ion-button
+  >
+</ion-footer>
